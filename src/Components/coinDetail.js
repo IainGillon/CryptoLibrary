@@ -1,6 +1,6 @@
 import React from "react";
 
-const CharacterDetail = ({character}) => {
+const coinDetail = ({coins}) => {
     return (
         <div>
             <h3>{coins.name}</h3>
