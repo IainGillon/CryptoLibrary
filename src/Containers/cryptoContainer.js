@@ -6,7 +6,7 @@ import ListItem from "../Components/listItem";
 
 
 const cryptoContainer = () => {
-    const[characters, setCoins] = useState(null);
+    const[coins, setCoins] = useState(null);
     const[selectedCoins, setSelectedCoins] = useState(null);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const cryptoContainer = () => {
 
     return (
         <div className="main-container">
-        {coins ? <CoinSelector coins={coins} onCoinSelected={onCoinSelected}/> : null}
+        {coins ? <coinSelector coins={coins} onCoinSelected={onCoinSelected}/> : null}
         {selectedCoin ? <coinDetail coin={selectedCoin}/> : null};
 
         </div>
@@ -35,3 +35,5 @@ const cryptoContainer = () => {
 
 
 }
+
+export default cryptoContainer;
