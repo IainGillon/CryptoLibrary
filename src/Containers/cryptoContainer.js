@@ -2,7 +2,7 @@ import react, {useEffect, useState} from "react";
 import coinDetail from "../Components/coinDetail";
 import coinList from "../Components/coinList";
 import coinSelector from "../Components/coinSelector";
-import ListItem from "../Components/listItem";
+import listItem from "../Components/listItem";
 
 
 const cryptoContainer = () => {
@@ -21,13 +21,13 @@ const cryptoContainer = () => {
     }
 
     const onCoinSelected= function(coins){
-        setSelectedCoin(coins.name)
+        setSelectedCoins(coins.name)
     }
 
     return (
         <div className="main-container">
         {coins ? <coinSelector coins={coins} onCoinSelected={onCoinSelected}/> : null}
-        {selectedCoin ? <coinDetail coin={selectedCoin}/> : null};
+        {selectedCoins ? <coinDetail coin={selectedCoins}/> : null};
 
         </div>
     )
