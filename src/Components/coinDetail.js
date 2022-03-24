@@ -1,6 +1,6 @@
 import React from "react";
 
-const coinDetail = ({coins}) => {
+const CoinDetail = ({coins}) => {
     return (
         <div>
             <h3>{coins.name}</h3>
@@ -13,4 +13,4 @@ const coinDetail = ({coins}) => {
     )
 }
  
-export default coinDetail
+export default CoinDetail

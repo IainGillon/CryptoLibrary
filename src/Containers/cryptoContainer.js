@@ -27,7 +27,7 @@ const CryptoContainer = () => {
     return (
         <div className="main-container">
         {coins ? <CoinSelector coins={coins} onCoinSelected={onCoinSelected}/> : null}
-        {selectedCoins ? <CoinDetail coin={selectedCoins}/> : null};
+        {selectedCoins ? <CoinDetail coins={selectedCoins}/> : null};
 
         </div>
     )
