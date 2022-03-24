@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-const coinSelector = ({coins, onCoinSelected}) => {
+const CoinSelector = ({coins, onCoinSelected}) => {
     const handleChange = function(event) {
         onCoinSelected(coins[event.target.value]);
 
     }
-    const coinOptions = characters.map((coins, index) => {
+    const coinOptions = coins.map((coins, index) => {
         return <option value={index} key={index}>
             {coins.name}
         </option>
@@ -21,4 +21,4 @@ const coinSelector = ({coins, onCoinSelected}) => {
     )
 }
 
-export default coinSelector
+export default CoinSelector

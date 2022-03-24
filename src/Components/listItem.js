@@ -1,6 +1,6 @@
 import React from 'react';
 
- const ListItem =  ({character, onCoinClick}) => {
+ const ListItem =  ({coins, onCoinClick}) => {
      const handleClick = function(){
          onCoinClick(coins)
      }

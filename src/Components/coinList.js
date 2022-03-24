@@ -1,7 +1,7 @@
 import React from "react";
-import listItem from "./listItem";
+import ListItem from "./ListItem";
 
-const coinList = ({coins, onCoinClick}) => {
+const CoinList = ({coins, onCoinClick}) => {
     const coinList = coins.map((coins, index) => {
         return <listItem coins={coins} key={index} onCoinClick={onCoinClick}/>
     })
@@ -14,4 +14,4 @@ const coinList = ({coins, onCoinClick}) => {
     )
 }
 
-export default coinList
+export default CoinList

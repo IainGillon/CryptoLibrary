@@ -1,13 +1,13 @@
 
 import './App.css';
-import cryptoContainer from './Containers/cryptoContainer';
+import CryptoContainer from './Containers/CryptoContainer';
 
 function App() {
   return (
     <div className="App">
 
     <h1>coins </h1>
-      <cryptoContainer />
+      <CryptoContainer />
     
     
     </div>
